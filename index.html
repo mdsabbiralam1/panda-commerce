@@ -7,13 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panda Commerce</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- custom style css -->
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
-<body>
+<body style="scroll-behavior: smooth;">
     <!-- nav start -->
     <nav>
-        <div class="container ">
+        <div class="container fixed-top ">
             <nav class="navbar navbar-expand-lg navbar-light bg-light ">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
@@ -31,14 +33,14 @@
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Shoes</a>
+                                <a class="nav-link" href="#shoes">Shoes</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Backack</a>
+                                <a class="nav-link" href="#backpack">Backpack</a>
                             </li>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Subscripe</a>
+                                <a class="nav-link" href="#subscribe">Subscripe</a>
                             </li>
                         </ul>
                     </div>
@@ -48,7 +50,7 @@
     </nav>
     <main>
         <!-- top banner carousel -->
-        <div class="container mt-5" style="background-color: #fceae8;">
+        <div class="container mt-5 panda-info">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -68,7 +70,7 @@
                                     fuga porro nobis, vero voluptatum repellendus tempora dolore atque doloribus nulla
                                     molestias odio deserunt excepturi aliquid? Voluptatem, cumque eos?</p>
                                 <h2>$420</h2>
-                                <button class="btn-warning text-white">Buy Now</button>
+                                <button class="panda-buttom-primary text-white">Buy Now</button>
                             </div>
                             <div class="col-lg-5">
                                 <img src="media/images/banner-images/headphone.png" class="d-block w-100" alt="...">
@@ -84,7 +86,7 @@
                                     fuga porro nobis, vero voluptatum repellendus tempora dolore atque doloribus nulla
                                     molestias odio deserunt excepturi aliquid? Voluptatem, cumque eos?</p>
                                 <h2>$420</h2>
-                                <button class="btn-warning text-white">Buy Now</button>
+                                <button class="panda-buttom-primary text-white">Buy Now</button>
                             </div>
                             <div class="col-lg-5">
                                 <img src="media/images/banner-images/tv.png" class="d-block w-100" alt="...">
@@ -100,7 +102,7 @@
                                     fuga porro nobis, vero voluptatum repellendus tempora dolore atque doloribus nulla
                                     molestias odio deserunt excepturi aliquid? Voluptatem, cumque eos?</p>
                                 <h2>$420</h2>
-                                <button class="btn-warning text-white">Buy Now</button>
+                                <button class="panda-buttom-primary text-white">Buy Now</button>
                             </div>
                             <div class="col-lg-5">
                                 <img src="media/images/banner-images/xbox.png" class="d-block w-100" alt="...">
@@ -121,9 +123,9 @@
             </div>
         </div>
         <!-- catagores -->
-        <div class="container my-4 border rounded mb-5" style="background-color: #fceae8;">
+        <div class="container my-4 border rounded mb-5 panda-info">
             <div class="row me-auto justify-content-center ">
-                <div class="col-lg-3 col-md-4 d-flex align-items-center bg-primary m-2">
+                <div class="col-lg-3 col-md-4 d-flex align-items-center panda-watch-info m-2">
                     <div class="row d-flex align-items-center">
                         <div class="col-lg-10">
                             <h1 class="text-white d-flex justify-content-start">Watch</h1>
@@ -135,7 +137,7 @@
                     </div>
 
                 </div>
-                <div class="col-lg-3 col-md-4 d-flex align-items-center bg-info m-2">
+                <div class="col-lg-3 col-md-4 d-flex align-items-center panda-bag-info m-2">
                     <div class="row d-flex align-items-center ">
                         <div class="col-lg-10">
                             <h1 class="text-white d-flex justify-content-start">Bag</h1>
@@ -146,10 +148,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 d-flex align-items-center bg-danger m-2">
+                <div class="col-lg-3 col-md-4 d-flex align-items-center panda-shoes-info m-2">
                     <div class="row d-flex align-items-center">
                         <div class="col-lg-10">
-                            <h1 class="text-white d-flex justify-content-start">Shoes</h1>
+                            <h1 class="text-white d-flex justify-content-start" id="shoes">Shoes</h1>
                         </div>
                         <div class="col-lg-2">
                             <img class="d-flex justify-content-end" width="100px" height="100px"
@@ -171,7 +173,7 @@
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                                 additional content. </p>
                             <h5>$500</h5>
-                            <button type="button" class="btn btn-danger px-3 text-white">Buy Now</button>
+                            <button type="button" class="btn panda-buttom-primary px-3 text-white">Buy Now</button>
                         </div>
                     </div>
                     <div class="card mx-4 border-0 shadow-lg h-100">
@@ -184,7 +186,8 @@
                                         additional
                                         content.</p>
                                     <h5>$921</h5>
-                                    <button type="button" class="btn btn-danger px-3 text-white">Buy Now</button>
+                                    <button type="button" class="btn panda-buttom-primary px-3 text-white">Buy
+                                        Now</button>
                                 </div>
                             </div>
                         </div>
@@ -197,7 +200,7 @@
                                 additional content.
                             </p>
                             <h5>$1255</h5>
-                            <button type="button" class="btn btn-danger px-3 text-white">Buy Now</button>
+                            <button type="button" class="btn panda-buttom-primary px-3 text-white">Buy Now</button>
                         </div>
                     </div>
                 </div>
@@ -205,7 +208,7 @@
         </section>
         <!-- backpack start now -->
         <section class="container mb-5">
-            <h2>Backpack</h2>
+            <h2 id="backpack">Backpack</h2>
             <div class="container">
                 <div class="card-group g-3">
                     <div class="card mx-4 border-0 shadow-lg h-100">
@@ -215,7 +218,7 @@
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                                 additional content. </p>
                             <h5>$500</h5>
-                            <button type="button" class="btn btn-danger px-3 text-white">Buy Now</button>
+                            <button type="button" class="btn panda-buttom-primary px-3 text-white">Buy Now</button>
                         </div>
                     </div>
                     <div class="card mx-4 border-0 shadow-lg h-200">
@@ -228,7 +231,8 @@
                                         additional
                                         content.</p>
                                     <h5>$921</h5>
-                                    <button type="button" class="btn btn-danger px-3 text-white">Buy Now</button>
+                                    <button type="button" class="btn panda-buttom-primary px-3 text-white">Buy
+                                        Now</button>
                                 </div>
                             </div>
                         </div>
@@ -241,7 +245,7 @@
                                 additional content.
                             </p>
                             <h5>$1255</h5>
-                            <button type="button" class="btn btn-danger px-3 text-white">Buy Now</button>
+                            <button type="button" class="btn panda-buttom-primary px-3 text-white">Buy Now</button>
                         </div>
 
                     </div>
@@ -250,11 +254,12 @@
         </section>
         <!-- subscribe -->
         <section class="py-5">
-            <div class="container text-center py-5 rounded-pill" style="background-color: #fceae8;">
+            <div id="subscribe" class="container text-center py-5 rounded-pill panda-info">
                 <h1> LET'S STAY IN TOUCH </h1>
                 <p style="color:#808080">Get updates on sales, specials and more</p>
                 <input type="text" name="" id=""> <br>
-                <button type="button" class="btn btn-danger px-3 text-white mt-2 text-disable">Buy Now</button>
+                <button type="button" class="btn panda-buttom-primary px-3 text-white mt-2 text-disable">Buy
+                    Now</button>
             </div>
         </section>
     </main>
